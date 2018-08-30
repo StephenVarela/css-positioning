@@ -13,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  display: grid;
 }
 
 img {
@@ -26,4 +27,36 @@ figure {
 .film {
   width: 50%;
   margin: 40px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border: 1px solid silver;
+  position: relative;
+}
+
+.action-like{
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: red;
+}
+
+.film-poster{
+  position: relative;
+  margin: 5px;
+}
+
+.film-details{
+  margin: 10px;
+  overflow: scroll;
+}
+
+.film-details>h1{
+  margin-top: 0px;
+}
+
+.action-watch-later{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: red;
 }
